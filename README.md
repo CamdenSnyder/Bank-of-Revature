@@ -6,10 +6,10 @@ https://discord.com/channels/922512644471152710/934110341024059403
 
 Java Upskill Capstone 
 
-Project Members
+Project Members:
 Jason Campbell, Jeremy Davis, Markus Metli, Nisarg Patel (Scrum Master), Anthony Renwick, Camden Snyder (Integration Lead)
 
-Project Description
+Project Description:
 The Bank of Revature is a full-stack single-page banking application where customers can manage their accounts, employees can create new accounts and make deposits into customer accounts. 
 
 Requirements (Product Backlog Assignments) 
