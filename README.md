@@ -1,5 +1,6 @@
 # Bank-of-Revature
 
+Team communication sites:
 https://drive.google.com/drive/folders/1ydztww1Ves9Z9noVSxkDfsPc7n1KyX6F
 
 https://discord.com/channels/922512644471152710/934110341024059403
@@ -22,3 +23,7 @@ As customers, view, create and partly edit their accounts or transactions. (AR)
 As customers, create and view transactions including transfers. (JD)
 As employees, create and view various customer accounts. (CS)
 As customers, create and edit mailing subscription for transaction & account updates. (NP)
+
+--
+
+Full-Stack Project Template (basis of Project 0): https://www.javaguides.net/2021/08/spring-boot-angular-postgresql-crud.html
