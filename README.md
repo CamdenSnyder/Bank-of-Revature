@@ -1,7 +1,7 @@
 # Bank-of-Revature
 
 Team communication sites:
-https://drive.google.com/drive/folders/1ydztww1Ves9Z9noVSxkDfsPc7n1KyX6F
+https://drive.google.com/drive/folders/1K7wkPBkscJ9eMfgR5OOTithW1SgTfAaN
 
 https://discord.com/channels/922512644471152710/934110341024059403
 
