@@ -1,9 +1,14 @@
 # Bank-of-Revature
 
 Team communication sites:
-https://drive.google.com/drive/folders/1K7wkPBkscJ9eMfgR5OOTithW1SgTfAaN (given requirements, agile documents)
+https://drive.google.com/drive/folders/1K7wkPBkscJ9eMfgR5OOTithW1SgTfAaN (requirements documents, standup/progress documents)
 
 https://discord.com/channels/922512644471152710/934110341024059403
+
+
+Full-Stack Project Template (basis of Project 0): 
+Front End https://www.javaguides.net/2021/08/spring-boot-angular-postgresql-crud.html
+Back End: https://www.javaguides.net/2021/08/spring-boot-postgresql-crud-example.html
 
 --
 
@@ -17,15 +22,12 @@ The Bank of Revature is a full-stack single-page banking application where custo
 
 Requirements (Product Backlog Assignments) 
 Users can
-Register. (MM)
-Login/Logout. (M)
-Update their information. (NP)
-As customers, view a dashboard. (JC)
-As customers, view, create and partly edit their accounts or transactions. (AR)
-As customers, create and view transactions including transfers. (JD)
-As employees, create and view various customer accounts. (CS)
-As customers, create and edit mailing subscription for transaction & account updates. (NP)
+1) Register. (MM)
+2) Login/Logout. (M)
+3) Update their information. (NP)
+4) As customers, view a dashboard. (JC)
+5) As customers, view their account details (checking, savings, loans). (AR)
+6) As customers, create transactions (deposit, withdrawal (transfer as stretch)). (JD)
+7) As employees, create and view various customer accounts. (CS)
+8) As customers, create and edit mailing subscription for transaction & account updates. (NP)
 
---
-
-Full-Stack Project Template (basis of Project 0): https://www.javaguides.net/2021/08/spring-boot-angular-postgresql-crud.html
