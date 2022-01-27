@@ -2,7 +2,6 @@
 
 Team communication sites:  
 https://drive.google.com/drive/folders/1K7wkPBkscJ9eMfgR5OOTithW1SgTfAaN (requirements documents, standup/progress documents)  
-
 https://discord.com/channels/922512644471152710/934110341024059403
 
 
