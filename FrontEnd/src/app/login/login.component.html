@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="header"><div class="header-text">Bank Of Revature</div></div>
+    <div class="elements">
+    <div class="element">
+        Email address:-<br/>
+        <input type="email" #email required placeholder="Enter your email" class="input-data"/>
+    </div>
+    <div class="element">
+        Password:-<br/>
+        <input type="password" #pass required placeholder="Enter your password" class="input-data"/>
+    </div>
+    <div class="input-button">
+        <input type="button" (click)="Login(email.value,pass.value)" value="Login" class="login-button"/>
+    </div>  
+    <div class="more-info">New User??? <a href="/newuser">click here</a></div>
+    </div>
+</div>
+
