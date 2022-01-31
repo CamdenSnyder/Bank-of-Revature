@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { CreateBankAccountComponent } from './create-bank-account/create-bank-account.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    SignUpComponent
+    SignUpComponent,
+    CreateBankAccountComponent
   ],
   imports: [
     HttpClientModule,

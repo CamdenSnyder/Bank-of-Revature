@@ -38,5 +38,9 @@ export class AuthService {
   {
       return this.http.get<any>(`http://localhost:8081/transaction/Customer/${localStorage.getItem('cus')}`);
   }
+  CreateBankAccount(accountData:any)
+  {
+    return this.http.post<any>('http://localhost:8081/account/create_new_account', accountData);
+  }
 
 }

@@ -1,9 +1,13 @@
-<div class="topnav">
+<div class="navbar">
+  <a href="/login"[class.active]="is_selected=='Login'" (click)="onselect('Login')">Login</a>
+  <a href="/newuser"[class.active]="is_selected=='New User'" (click)="onselect('New User')">New User</a>
+</div>
+<div class="navbar" >
   <a href="/login"[class.active]="is_selected=='Login'" (click)="onselect('Login')">Login</a>
   <a href="/newuser"[class.active]="is_selected=='New User'" (click)="onselect('New User')">New User</a>
 </div>
 <div>
   <h1> Welcome to Revature Bank </h1>
 </div>
-
+<app-create-bank-account></app-create-bank-account>
 <router-outlet></router-outlet>
