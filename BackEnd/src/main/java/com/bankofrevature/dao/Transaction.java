@@ -19,8 +19,8 @@ public class Transaction {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int trans_id;
 	private String trans_date;
-	private int trans_by;
-	private int trans_to;
+	private int trans_by;	// Not needed?
+	private int trans_to;	// Not needed?
 	private int account_id;
 	private String trans_type;
 	private double amount;
@@ -33,8 +33,8 @@ public class Transaction {
 		super();
 		this.trans_id = trans_id;
 		this.trans_date = trans_date;
-		this.trans_by = trans_by;
-		this.trans_to = trans_to;
+		this.trans_by = trans_by;	// Not needed?
+		this.trans_to = trans_to;	// Not needed?
 		this.account_id = account_id;
 		this.trans_type = trans_type;
 		this.amount = amount;
@@ -81,7 +81,7 @@ public class Transaction {
 
 
 
-	public int getTrans_by() {
+	public int getTrans_by() {	// Not needed?
 		return trans_by;
 	}
 
@@ -90,7 +90,7 @@ public class Transaction {
 
 
 
-	public void setTrans_by(int trans_by) {
+	public void setTrans_by(int trans_by) {	// Not needed?
 		this.trans_by = trans_by;
 	}
 
@@ -99,7 +99,7 @@ public class Transaction {
 
 
 
-	public int getTrans_to() {
+	public int getTrans_to() {	// Not needed?
 		return trans_to;
 	}
 
@@ -108,7 +108,7 @@ public class Transaction {
 
 
 
-	public void setTrans_to(int trans_to) {
+	public void setTrans_to(int trans_to) {	// Not needed?
 		this.trans_to = trans_to;
 	}
 
