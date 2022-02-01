@@ -20,16 +20,27 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
+<<<<<<< HEAD
+  it(`should have as title 'BankOfRevature'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('BankOfRevature');
+=======
   it(`should have as title 'FrontEnd'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('FrontEnd');
+>>>>>>> 60a8e78babacd6f78192fb69750c948a891d2c6c
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
+<<<<<<< HEAD
+    expect(compiled.querySelector('.content span')?.textContent).toContain('BankOfRevature app is running!');
+=======
     expect(compiled.querySelector('.content span')?.textContent).toContain('FrontEnd app is running!');
+>>>>>>> 60a8e78babacd6f78192fb69750c948a891d2c6c
   });
 });
