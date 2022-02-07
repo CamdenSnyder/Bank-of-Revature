@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="header">Welcome to Bank of Revature</div>
+
+    <div class = "error-div">
+        {{msg}}
+    </div>
+    <form #myForm="ngForm" (submit)="CreateTransaction(account_id.value,balance.value,myForm.value)" type="button" novalidate>
+         <div class="element">Account ID<br/>  <input type="text" class="input-data" required #account_id name="account_id"/></div>
+         <div class="element">Transaction Type<br/>
+              <input type="radio" required #type name="type" value="deposit" ngModel/>
+              <label class="custom-control-label" >Deposit</label><br/>
+              <input type="radio" required #type name="type" value="withdraw"  ngModel/>
+              <label class="custom-control-label">Withdraw</label>
+        </div>
+         <div class="element">Transaction Date<br/><div class="input-data">{{Time}}</div></div>
+         <div class="element">Amount<br/>  <input type="text" #balance required name="balance" class="input-data"/></div>
+        
+
+            <div><button class="signin-button" type="submit" value="Do Transaction">Do Transaction</button>
+            </div>
+    </form>
+</div>

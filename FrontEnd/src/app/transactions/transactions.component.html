@@ -1,0 +1,26 @@
+      <div class="header"><div class="header-text">Transactions</div></div>
+      <div  class="container">
+          <div class="container-item" *ngFor="let transaction of transactions">
+              <div class="profile-main-class">
+                  <div class="profile-card">
+                      <div class="profile-data">
+                          <div class="profile-data-header">
+                              <div class="profile-data-header-title">
+                                {{transaction.trans_id}}
+                              </div>
+                              <div class="log-out">{{transaction.trans_date}}</div>
+                          </div>
+                          <div class="profile-data-sub-info">
+                            {{transaction.trans_type}} ${{transaction.amount}}
+                          </div>
+                          <div class="profile-data-sub-info">
+                           Account id: {{transaction.account_id}}
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="contentmsg" ><p (click)="isShow()" style="cursor: pointer;">{{contentmsg}}</p></div>
+      </div>
+      
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html5>
+
+<div class="main">
+    <div class="header">Welcome to Bank of Revature</div>
+    <div class = "error-div">
+        {{error}}
+    </div>
+
+    <form>
+        <div class="grid">  
+            <div class="element">Enter your email address<br/> <input type="text" required #email name="email"/></div>
+            <div><input class="signin-button" ng-model="myVar"
+                (click)="AddUser(email.value)" type="button" value="Submit"/>
+            </div>
+        </div>
+    </form>
+<div  class="more-info">Already User?? <a href="/login">Login</a></div>
+</div>

@@ -1,0 +1,11 @@
+<div class="navbar">
+    <a (click)=" clickOnDiv('transaction')">Transaction</a>
+    <a (click)=" clickOnDiv('bankaccount')">Open New Bank account</a>
+    <a (click)=" clickOnDiv('profile')">Profile</a>
+    <div class="topnav-right">
+        <a href="/login">Log Out</a>
+      </div>
+  </div>
+<app-profile *ngIf="showDiv=='profile'"></app-profile>
+<app-create-bank-account *ngIf="showDiv=='bankaccount'"></app-create-bank-account>
+<app-createtransaction *ngIf="showDiv=='transaction'"></app-createtransaction>
