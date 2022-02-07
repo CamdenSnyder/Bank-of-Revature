@@ -1,0 +1,62 @@
+<div class="main">
+    
+    <div class="profile-main-class">
+        <div class="profile-card">
+            <div class="profile-icon">
+                <img src="../../assets/profile-icon.svg" width="40px" height="40px">
+            </div>
+            <div class="profile-data">
+                <div class="profile-data-header">
+                    <div class="profile-data-header-title">
+                        {{profile.user_first_name | uppercase}}  {{profile.user_last_name | uppercase}}
+                    </div>
+                   <div class="log-out" (click)="logout()">Log out</div>
+                   
+                    <div class="profile-data-sub-info">
+                        <div>Id:{{profile.user_id}}</div>
+                    <div>{{profile.user_email}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-data-sub-more-info" *ngIf="contentmsg==='hide details'">
+        <div>Id:{{profile.user_id}}</div>
+      <div>{{profile.user_email}}</div>
+    
+      <form>
+        <table>
+            <tr>
+                <td>Date of Birth</td>
+                <td>{{profile.user_dob}}</td>
+            </tr> 
+            <tr>
+                <td>Address</td>
+                <td> {{profile.user_address}}</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>{{profile.user_city}}</td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>{{profile.user_state}}</td>
+            </tr>    
+            <tr> 
+                <td>Contact Number</td>
+                <td><input type="text" [(ngModel)]="profile.user_phone" required #cnumber name="cnumber"/></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td> <input type="email" [(ngModel)]="profile.user_email"required #email name="email" /></td>
+            </tr>
+            <tr><input class="signin-button" ng-model="myVar"
+                (click)="UpdateUser(cnumber.value,email.value)" type="button" value="Update"/>
+            </tr>
+            </table>
+    </form>
+    </div>
+    
+    <div class="contentmsg" ><p (click)="isShow()" style="cursor: pointer;">{{contentmsg}}</p></div>
+</div>

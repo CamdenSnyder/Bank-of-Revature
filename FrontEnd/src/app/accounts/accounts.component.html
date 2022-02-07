@@ -1,0 +1,25 @@
+
+<div class="header"><div class="header-text">Account</div></div>
+<div  class="container">
+    <div class="container-item" *ngFor="let acc of accounts">
+        <div class="profile-main-class">
+            <div class="profile-card">
+                <div class="profile-data">
+                    <div class="profile-data-header">
+                        <div class="profile-data-header-title">
+                            {{acc.acc_id}}
+                        </div>
+                        <div class="log-out">{{acc.acc_balance}}</div>
+                    </div>
+                    <div class="profile-data-sub-info">
+                      type: {{acc.acc_type}}
+                    </div>
+                    <div class="profile-data-sub-info">
+                        balance: {{acc.acc_balance}}
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
