@@ -23,10 +23,9 @@
             <div class="element">Email Address<br/> <input type="email" required #email name="email" /></div></div>
             <div class="element">Password<br/> <input type="password" required #pass name="pass"/></div>
             <div class="element">Confirm Password<br/> <input type="password" required #pass2 name="pass2"/></div>
-            <div class="element">Date of Birth<br/> <input type="text" required #dob name="dob"/></div>
-            <div class="element">Role<br/> <input type="text" required #role name="role"/></div>
+            <div class="element">Date of Birth<br/> <input type="date" required #dob name="dob"/></div>
             <div><input class="signin-button" ng-model="myVar"
-                (click)="AddUser(id.value, fname.value,lname.value,address.value,city.value,state.value,cnumber.value,email.value,pass.value,pass2.value, dob.value, role.value)" type="button" value="Submit"/>
+                (click)="AddUser(id.value, fname.value,lname.value,address.value,city.value,state.value,cnumber.value,email.value,pass.value,pass2.value, dob.value)" type="button" value="Submit"/>
             </div>
         </div>
     </form>

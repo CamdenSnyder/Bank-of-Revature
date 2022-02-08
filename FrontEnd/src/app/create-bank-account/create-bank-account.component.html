@@ -9,12 +9,12 @@
 
         <div class="grid"> <div class="element">Customer ID<br/>  <input type="text" required #user_id name="user_id"/></div>
         <div class="grid"> <div class="element">Account Type<br/>  <input type="text" required #type name="type"/></div>
-        <div class="grid"> <div class="element">Opening Date<br/>  <input type="text" required #opening_date name="opening_date"/></div>
+        <div class="grid"> <div class="element">Opening Date<br/>  <div class="input-data">{{Time}}</div></div>
         <div class="grid"> <div class="element">First Deposit Amount<br/>  <input type="text" #balance required name="balance"/></div>
         <div class="grid"> <div class="element">Branch ID<br/>  <input type="text" required #branch name="branch"/></div>
         
             <div><input class="signin-button" 
-                (click)="CreateAccount(user_id.value, type.value,opening_date.value,balance.value,branch.value)" type="button" value="Create Account"/></div>
+                (click)="CreateAccount(user_id.value, type.value,balance.value,branch.value)" type="button" value="Create Account"/></div>
         </div>
 
 </div>
