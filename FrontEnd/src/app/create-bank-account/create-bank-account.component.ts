@@ -12,7 +12,9 @@ export class CreateBankAccountComponent implements OnInit {
   error:boolean | undefined
   msg:any
   constructor(private _auth:AuthService,private router:Router) {
-
+    var today = new Date();
+    console.log(today.getMonth()+'/'+today.getDate()+'/'+today.getFullYear())
+    this.Time=today.getMonth()+'/'+today.getDate()+'/'+today.getFullYear();
    }
 
   ngOnInit(): void {
@@ -21,10 +23,10 @@ export class CreateBankAccountComponent implements OnInit {
     
   }
 
-  CreateAccount (user_id:any, acc_type:any, opening_date:any, acc_balance:any, branch_id:any) {
+  CreateAccount (user_id:any, acc_type:any, acc_balance:any, branch_id:any) {
     user_id = parseInt(user_id)
     acc_type = acc_type.toString()
-    opening_date = opening_date.toString()
+   var  opening_date = this.Time.toString()
     acc_balance=parseInt(acc_balance)
     branch_id=parseInt(branch_id)
 

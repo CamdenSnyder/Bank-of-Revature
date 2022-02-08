@@ -19,7 +19,7 @@ export class SignUpComponent implements OnInit {
   this.error = false;
   }
   AddUser(user_id:any, user_first_name:any, user_last_name:any,user_add:any,
-    user_city:any,user_state:any,user_phone:any,user_email:any,user_password:any,user_password2:any, user_dob:any, user_role:any)
+    user_city:any,user_state:any,user_phone:any,user_email:any,user_password:any,user_password2:any, user_dob:any)
   {
           user_id = parseInt(user_id)
           user_first_name = user_first_name.toString()
@@ -32,7 +32,7 @@ export class SignUpComponent implements OnInit {
           user_password = user_password.toString()
           user_password2 = user_password2.toString()
           user_dob = user_dob.toString()
-          user_role = user_role.toString()
+          const user_role = "customer".toString()
           const UserData={user_id, user_first_name, user_last_name, user_add,
                         user_city, user_state,  user_phone,user_email, user_password, user_dob, user_role}
           console.log(UserData)
@@ -42,7 +42,7 @@ export class SignUpComponent implements OnInit {
 
           if(user_id != "" && user_first_name != "" && user_last_name != "" && user_add != "" &&
             user_city != "" && user_state != "" && user_phone != "" && user_email != "" && user_password != "" && 
-            user_dob != "" && user_role != ""){
+            user_dob != ""){
             if(user_password === user_password2){
 
                 this._auth.SignInMethod(UserData).subscribe(res => {
