@@ -18,7 +18,7 @@ public class SendMail {
 		//https://myaccount.google.com/security
 	    // Sender's email ID and password needs to be mentioned
 		Password password = new Password();
-	    final String from = "bankofrevature@gmail.com";
+	    final String from = "YOUR EMAIL ADDRESS";
 	    final String pass =password.getPassword();
 	    
 	    // Defining the gmail host
