@@ -37,9 +37,9 @@ export class CreateBankAccountComponent implements OnInit {
     const accountData={acc_type,opening_date,acc_balance,branch_id,user_id};
     console.log(accountData);
     this._auth.CreateBankAccount(accountData).subscribe(res => {
-        if(res==true)
+        if(res>0)
         {
-          this.msg="Account Created"
+          this.msg=`Account Created With Account ID: ${res}`
         }
       })
       

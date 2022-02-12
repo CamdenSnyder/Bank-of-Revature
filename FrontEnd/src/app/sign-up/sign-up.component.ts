@@ -12,16 +12,16 @@ import { AuthService } from '../auth.service';
 export class SignUpComponent implements OnInit {
   
   error:boolean | undefined
+  msg:any
   constructor(private _auth:AuthService,private router:Router) { }
 
   ngOnInit(): void {
 
   this.error = false;
   }
-  AddUser(user_id:any, user_first_name:any, user_last_name:any,user_add:any,
+  AddUser( user_first_name:any, user_last_name:any,user_add:any,
     user_city:any,user_state:any,user_phone:any,user_email:any,user_password:any,user_password2:any, user_dob:any)
   {
-          user_id = parseInt(user_id)
           user_first_name = user_first_name.toString()
           user_last_name = user_last_name.toString()
           user_add = user_add.toString()
@@ -33,23 +33,24 @@ export class SignUpComponent implements OnInit {
           user_password2 = user_password2.toString()
           user_dob = user_dob.toString()
           const user_role = "customer".toString()
-          const UserData={user_id, user_first_name, user_last_name, user_add,
+          const UserData={ user_first_name, user_last_name, user_add,
                         user_city, user_state,  user_phone,user_email, user_password, user_dob, user_role}
           console.log(UserData)
           
           //let errors = [];
           
 
-          if(user_id != "" && user_first_name != "" && user_last_name != "" && user_add != "" &&
+          if(user_first_name != "" && user_last_name != "" && user_add != "" &&
             user_city != "" && user_state != "" && user_phone != "" && user_email != "" && user_password != "" && 
             user_dob != ""){
             if(user_password === user_password2){
 
                 this._auth.SignInMethod(UserData).subscribe(res => {
   
-                if (res==true) {
+                if (res>0) {
                   localStorage.setItem('user',user_email);
-                  this.router.navigate(['/dashboard'])
+                  this.msg=`Your USER ID is :${res}`
+                  //this.router.navigate(['/dashboard'])
                 }
               })
             }else {

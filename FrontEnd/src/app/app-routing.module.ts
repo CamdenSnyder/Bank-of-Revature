@@ -9,7 +9,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
 
- // {path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  {path: '', redirectTo: '/login', pathMatch: 'full' },
  {path: 'enteremail', component:EnteremailComponent},
   {path: 'forgotpassword/:id', component:ForgotpasswordComponent},
  {path: 'admindashboard', component:AdmindashboardComponent },
